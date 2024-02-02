@@ -2,32 +2,61 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
+@layer base {
+	:root {
+		--body-font-family: "WorkSans-Regular", Helvetica;
+		--body-font-size: 13px;
+		--body-font-style: normal;
+		--body-font-weight: 400;
+		--body-letter-spacing: -0.26px;
+		--body-line-height: normal;
+		--fuschia-100: rgba(239, 93, 168, 1);
+		--fuschia-60: rgba(252, 221, 236, 1);
+		--fuschia-80: rgba(241, 120, 182, 1);
+		--header-1-font-family: "WorkSans-Bold", Helvetica;
+		--header-1-font-size: 34px;
+		--header-1-font-style: normal;
+		--header-1-font-weight: 700;
+		--header-1-letter-spacing: -0.68px;
+		--header-1-line-height: normal;
+		--header-2-font-family: "WorkSans-Bold", Helvetica;
+		--header-2-font-size: 20px;
+		--header-2-font-style: normal;
+		--header-2-font-weight: 700;
+		--header-2-letter-spacing: -0.4px;
+		--header-2-line-height: normal;
+		--iris-100: rgba(93, 95, 239, 1);
+		--iris-60: rgba(165, 166, 246, 1);
+		--iris-80: rgba(120, 121, 241, 1);
+	}
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
-  }
-}
+@layer base {
+	* {
+		margin: 0;
+		padding: 0;
+		min-height: 0;
+		min-width: 0;
+		box-sizing: border-box;
+	}
+	:root {
+		display: flex;
+		/* align-items: stretch; */
+		justify-content: stretch;
+		height: 100vh;
+	}
+	body {
+		display: flex;
+		flex-direction: column;
+		align-items: stretch;
+		width: 100vw;
+	}
 
-body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
-}
-
-@layer utilities {
-  .text-balance {
-    text-wrap: balance;
-  }
+	main {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		height: 100%;
+		border: 4px solid crimson;
+	}
 }
