@@ -41,7 +41,7 @@ export default function LogIn() {
 
 				<Link href='/sign-up' className='self-start '>
 					<p className='h-5 text-xs text-pallete-picton-blue cursor-pointer'>
-						Don't have an account? Sign Up
+						Don&apos;t have an account? Sign Up
 					</p>
 				</Link>
 			</div>
