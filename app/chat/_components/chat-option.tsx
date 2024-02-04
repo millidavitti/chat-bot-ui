@@ -1,3 +1,4 @@
+"use client";
 import { cn } from "@/lib/utils";
 import { GlobalStateContext } from "@/state/global.state";
 import React, { ReactNode, useContext } from "react";
