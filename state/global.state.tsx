@@ -1,3 +1,4 @@
+"use client";
 import { Dispatch, createContext, useReducer } from "react";
 import { LocalStorageManager } from "./localStorageManager";
 
