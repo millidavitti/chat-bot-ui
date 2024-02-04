@@ -3,7 +3,7 @@ import Link from "next/link";
 
 export default function SignUp() {
 	return (
-		<div className='flex items-center lg:h-full'>
+		<div className='flex items-center h-full'>
 			<div className='flex flex-col flex-grow items-center gap-y-3 px-4'>
 				<div className='w-fit h-fit rounded'>
 					<Image src='/logo.svg' width={54} height={55} alt='chatbot logo' />
