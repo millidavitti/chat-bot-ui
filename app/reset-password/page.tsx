@@ -3,7 +3,7 @@ import Link from "next/link";
 
 export default function ResetPassword() {
 	return (
-		<div className='flex items-center lg:h-full'>
+		<div className='flex items-center h-full'>
 			<div className='flex flex-col flex-grow items-center gap-y-3 px-4'>
 				<Link href='/'>
 					<div className='w-12 h-12 rounded'>
