@@ -1,0 +1,67 @@
+.
+├── PROJECT_STRUCTURE.txt
+├── README.md
+├── app
+│   ├── (log-in)
+│   │   ├── _components
+│   │   │   └── login-form.tsx
+│   │   └── page.tsx
+│   ├── chat
+│   │   ├── _components
+│   │   │   ├── chat-bar.tsx
+│   │   │   ├── chat-bot-response.tsx
+│   │   │   ├── chat-bot.tsx
+│   │   │   ├── chat-option.tsx
+│   │   │   ├── conversation-item.tsx
+│   │   │   ├── conversation-sheet.tsx
+│   │   │   ├── conversations-bar.tsx
+│   │   │   └── user-chat-request.tsx
+│   │   ├── layout.tsx
+│   │   └── page.tsx
+│   ├── favicon.ico
+│   ├── globals.css
+│   ├── layout.tsx
+│   ├── reset-password
+│   │   ├── _components
+│   │   │   └── reset-password-form.tsx
+│   │   └── page.tsx
+│   └── sign-up
+│       ├── _components
+│       │   └── sign-up-form.tsx
+│       └── page.tsx
+├── components
+│   ├── logo.tsx
+│   └── ui
+│       └── sheet.tsx
+├── components.json
+├── diff.txt
+├── hoc
+│   └── withAuthentication.tsx
+├── lib
+│   ├── get-formatted-date.ts
+│   ├── pipeline.ts
+│   └── utils.ts
+├── next-env.d.ts
+├── next.config.mjs
+├── package-lock.json
+├── package.json
+├── postcss.config.js
+├── public
+│   ├── avatar.png
+│   ├── close.svg
+│   ├── delete.svg
+│   ├── ham.svg
+│   ├── image.png
+│   ├── logo.svg
+│   ├── next.svg
+│   ├── plus.svg
+│   ├── send.svg
+│   ├── user.png
+│   └── vercel.svg
+├── state
+│   ├── global.state.tsx
+│   └── localStorageManager.ts
+├── tailwind.config.ts
+└── tsconfig.json
+
+15 directories, 49 files
