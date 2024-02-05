@@ -1,5 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
+import ResetPasswordForm from "./_components/reset-password-form";
 
 export default function ResetPassword() {
 	return (
@@ -14,29 +15,7 @@ export default function ResetPassword() {
 					Reset Password
 				</h1>
 
-				<form className='flex flex-col gap-y-3 self-stretch'>
-					<label htmlFor='password' className='text-fuschia-100'>
-						New Password
-					</label>
-					<input
-						type='password'
-						id='password'
-						defaultValue='password123!'
-						className='outline outline-1 outline-border h-[47px] px-2 rounded-[4px] text-pallete-grey-100'
-					/>
-					<label htmlFor='confirm-password' className='text-fuschia-100'>
-						Confirm Password
-					</label>
-					<input
-						type='password'
-						id='confirm-password'
-						defaultValue='password123!'
-						className='outline outline-1 outline-border h-[47px] px-2 rounded-[4px] text-pallete-grey-100'
-					/>
-					<button className='h-11 mt-8 bg-pallete-picton-blue rounded-[4px] text-base text-white'>
-						Reset Password
-					</button>
-				</form>
+				<ResetPasswordForm />
 			</div>
 			<Image
 				src='/image.png'

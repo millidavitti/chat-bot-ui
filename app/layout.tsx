@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "./globals.css";
 import dynamic from "next/dynamic";
+import { Toaster } from "sonner";
 
 const GlobalStateProvider = dynamic(() => import("@/state/global.state"), {
 	ssr: false,
@@ -21,6 +22,7 @@ export default function RootLayout({
 }>) {
 	return (
 		<html lang='en'>
+			<Toaster />
 			<body className={inter.className}>
 				<GlobalStateProvider>
 					<main className=''>{children}</main>
